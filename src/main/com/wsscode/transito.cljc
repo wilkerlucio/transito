@@ -20,8 +20,8 @@
   (t/write-handler (fn [_] "unknown") #(pr-str %)))
 
 (defn read-str
-  ([s] (read-str {} s))
-  ([options s]
+  ([s] (read-str s {}))
+  ([s options]
    #?(:clj
       (let [in     (ByteArrayInputStream. (.getBytes s "UTF-8"))
             reader (t/reader in :json options)]
@@ -60,10 +60,10 @@
         (throw (ex-info "Type must be :json, :json-verbose or :msgpack" {:type type}))))))
 
 (defn ^String write-str
-  ([x] (write-str {} x))
-  ([{:keys [handlers write-meta?]
-     :or   {write-meta? true}}
-    x]
+  ([x] (write-str x {}))
+  ([x
+    {:keys [handlers write-meta?]
+     :or   {write-meta? true}}]
    #?(:clj
       (let [out    (ByteArrayOutputStream.)
             writer (writer out :json
