@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module cursive.leiningen.project.DepsProjectsManager.isLeinModule="true" cursive.leiningen.project.LeiningenProjectsManager.displayName="transito" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src/main" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/tasks" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/test" isTestSource="true" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Deps: com.cognitect/transit-java:1.0.343" level="project" />
+    <orderEntry type="library" name="Deps: com.google.elemental2/elemental2-core:1.0.0-RC1" level="project" />
+    <orderEntry type="library" name="Deps: org.clojure/data.json:0.2.6" level="project" />
+    <orderEntry type="library" name="Deps: org.clojure/clojure:1.10.3" level="project" />
+    <orderEntry type="library" name="Deps: cljfx:1.7.12" level="project" />
+    <orderEntry type="library" name="Deps: org.openjfx/javafx-base$mac:15.0.1" level="project" />
+    <orderEntry type="library" name="Deps: commons-codec:1.13" level="project" />
+    <orderEntry type="library" name="Deps: org.clojure/tools.analyzer:1.0.0" level="project" />
+    <orderEntry type="library" name="Deps: cljfx/cljfx$jdk11:1.7.12" level="project" />
+    <orderEntry type="library" name="Deps: com.fulcrologic/guardrails:0.0.12" level="project" />
+    <orderEntry type="library" name="Deps: com.wsscode/async:1.0.11" level="project" />
+    <orderEntry type="library" name="Deps: com.vladsch.flexmark/flexmark-ext-autolink:0.62.0" level="project" />
+    <orderEntry type="library" name="Deps: org.openjfx/javafx-media:15.0.1" level="project" />
+    <orderEntry type="library" name="Deps: org.apache.commons/commons-compress:1.19" level="project" />
+    <orderEntry type="library" name="Deps: com.google.errorprone/error_prone_annotations:2.3.1" level="project" />
+    <orderEntry type="library" name="Deps: org.apache.commons/commons-lang3:3.10" level="project" />
+    <orderEntry type="library" name="Deps: org.clojure/tools.logging:1.1.0" level="project" />
+    <orderEntry type="library" name="Deps: org.clojure/core.specs.alpha:0.2.56" level="project" />
+    <orderEntry type="library" name="Deps: org.tukaani/xz:1.5" level="project" />
+    <orderEntry type="library" name="Deps: expound:0.7.2" level="project" />
+    <orderEntry type="library" name="Deps: org.clojure/spec.alpha:0.2.194" level="project" />
+    <orderEntry type="library" name="Deps: org.clojure/tools.cli:1.0.206" level="project" />
+    <orderEntry type="library" name="Deps: org.codehaus.mojo/animal-sniffer-annotations:1.14" level="project" />
+    <orderEntry type="library" name="Deps: com.taoensso/encore:3.1.0" level="project" />
+    <orderEntry type="library" name="Deps: org.slf4j/jcl-over-slf4j:1.7.28" level="project" />
+    <orderEntry type="library" name="Deps: org.openjfx/javafx-controls:15.0.1" level="project" />
+    <orderEntry type="library" name="Deps: com.vladsch.flexmark/flexmark:0.62.0" level="project" />
+    <orderEntry type="library" name="Deps: org.clojure/tools.analyzer.jvm:1.1.0" level="project" />
+    <orderEntry type="library" name="Deps: vlaaad/reveal:1.3.199" level="project" />
+    <orderEntry type="library" name="Deps: com.vladsch.flexmark/flexmark-util-collection:0.62.0" level="project" />
+    <orderEntry type="library" name="Deps: com.vladsch.flexmark/flexmark-util-visitor:0.62.0" level="project" />
+    <orderEntry type="library" name="Deps: Local com.wsscode/reveal-ext" level="project" />
+    <orderEntry type="library" name="Deps: cljfx/css:1.1.0" level="project" />
+    <orderEntry type="library" name="Deps: com.vladsch.flexmark/flexmark-ext-wikilink:0.62.0" level="project" />
+    <orderEntry type="library" name="Deps: com.vladsch.flexmark/flexmark-util-ast:0.62.0" level="project" />
+    <orderEntry type="library" name="Deps: com.vladsch.flexmark/flexmark-util-data:0.62.0" level="project" />
+    <orderEntry type="library" name="Deps: borkdude/graal.locking:0.0.2" level="project" />
+    <orderEntry type="library" name="Deps: com.fasterxml.jackson.dataformat/jackson-dataformat-cbor:2.10.2" level="project" />
+    <orderEntry type="library" name="Deps: com.googlecode.json-simple/json-simple:1.1.1" level="project" />
+    <orderEntry type="library" name="Deps: com.vladsch.flexmark/flexmark-util-options:0.62.0" level="project" />
+    <orderEntry type="library" name="Deps: com.cognitect/transit-cljs:0.8.269" level="project" />
+    <orderEntry type="library" name="Deps: org.clojure/google-closure-library:0.0-20191016-6ae1f72f" level="project" />
+    <orderEntry type="library" name="Deps: io.aviso/pretty:0.1.33" level="project" />
+    <orderEntry type="library" name="Deps: org.openjfx/javafx-web$mac:15.0.1" level="project" />
+    <orderEntry type="library" name="Deps: rewrite-clj:1.0.605-alpha" level="project" />
+    <orderEntry type="library" name="Deps: org.clojure/clojurescript:1.10.764" level="project" />
+    <orderEntry type="library" name="Deps: com.clojure-goes-fast/clj-async-profiler:0.4.1" level="project" />
+    <orderEntry type="library" name="Deps: org.jetbrains/annotations:15.0" level="project" />
+    <orderEntry type="library" name="Deps: org.flatland/ordered:1.5.9" level="project" />
+    <orderEntry type="library" name="Deps: commons-io:2.6" level="project" />
+    <orderEntry type="library" name="Deps: org.postgresql/postgresql:42.2.18" level="project" />
+    <orderEntry type="library" name="Deps: org.clojure/tools.namespace:0.2.11" level="project" />
+    <orderEntry type="library" name="Deps: com.vladsch.flexmark/flexmark-util-format:0.62.0" level="project" />
+    <orderEntry type="library" name="Deps: com.google.jsinterop/jsinterop-annotations:1.0.2" level="project" />
+    <orderEntry type="library" name="Deps: org.openjfx/javafx-media$mac:15.0.1" level="project" />
+    <orderEntry type="library" name="Deps: com.fasterxml.jackson.core/jackson-core:2.10.2" level="project" />
+    <orderEntry type="library" name="Deps: org.yaml/snakeyaml:1.26" level="project" />
+    <orderEntry type="library" name="Deps: org.ow2.asm/asm:5.2" level="project" />
+    <orderEntry type="library" name="Deps: org.openjfx/javafx-graphics:15.0.1" level="project" />
+    <orderEntry type="library" name="Deps: com.googlecode.lanterna/lanterna:3.0.3" level="project" />
+    <orderEntry type="library" name="Deps: babashka/clojure-lanterna:0.9.8-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Deps: com.cognitect/transit-js:0.8.874" level="project" />
+    <orderEntry type="library" name="Deps: com.taoensso/truss:1.6.0" level="project" />
+    <orderEntry type="library" name="Deps: org.clojure/google-closure-library-third-party:0.0-20191016-6ae1f72f" level="project" />
+    <orderEntry type="library" name="Deps: com.cognitect/test-runner:209b64" level="project" />
+    <orderEntry type="library" name="Deps: hiccup:2.0.0-alpha2" level="project" />
+    <orderEntry type="library" name="Deps: com.google.javascript/closure-compiler-externs:v20200315" level="project" />
+    <orderEntry type="library" name="Deps: org.javassist/javassist:3.18.1-GA" level="project" />
+    <orderEntry type="library" name="Deps: seancorfield/next.jdbc:1.1.610" level="project" />
+    <orderEntry type="library" name="Deps: com.taoensso/sente:1.16.0" level="project" />
+    <orderEntry type="library" name="Deps: org.nibor.autolink/autolink:0.6.0" level="project" />
+    <orderEntry type="library" name="Deps: com.google.guava/guava:25.1-jre" level="project" />
+    <orderEntry type="library" name="Deps: com.github.spotbugs/spotbugs-annotations:3.1.12" level="project" />
+    <orderEntry type="library" name="Deps: org.clojure/data.xml:0.2.0-alpha6" level="project" />
+    <orderEntry type="library" name="Deps: org.msgpack/msgpack:0.6.12" level="project" />
+    <orderEntry type="library" name="Deps: borkdude/edamame:0.0.11-alpha.29" level="project" />
+    <orderEntry type="library" name="Deps: com.google.j2objc/j2objc-annotations:1.1" level="project" />
+    <orderEntry type="library" name="Deps: org.clojure/data.csv:1.0.0" level="project" />
+    <orderEntry type="library" name="Deps: com.taoensso/timbre:4.10.0" level="project" />
+    <orderEntry type="library" name="Deps: com.cognitect/transit-clj:1.0.324" level="project" />
+    <orderEntry type="library" name="Deps: babashka:0.3.6" level="project" />
+    <orderEntry type="library" name="Deps: com.vladsch.flexmark/flexmark-util-html:0.62.0" level="project" />
+    <orderEntry type="library" name="Deps: com.vladsch.flexmark/flexmark-util-sequence:0.62.0" level="project" />
+    <orderEntry type="library" name="Deps: org.openjfx/javafx-base:15.0.1" level="project" />
+    <orderEntry type="library" name="Deps: args4j:2.0.26" level="project" />
+    <orderEntry type="library" name="Deps: clj-commons/clj-yaml:0.7.106" level="project" />
+    <orderEntry type="library" name="Deps: com.google.jsinterop/base:1.0.0" level="project" />
+    <orderEntry type="library" name="Deps: com.vladsch.flexmark/flexmark-util:0.62.0" level="project" />
+    <orderEntry type="library" name="Deps: com.vladsch.flexmark/flexmark-util-misc:0.62.0" level="project" />
+    <orderEntry type="library" name="Deps: com.opentable.components/otj-pg-embedded:0.13.3" level="project" />
+    <orderEntry type="library" name="Deps: funcool/promesa:6.0.0" level="project" />
+    <orderEntry type="library" name="Deps: org.checkerframework/checker-qual:3.5.0" level="project" />
+    <orderEntry type="library" name="Deps: com.vladsch.flexmark/flexmark-util-builder:0.62.0" level="project" />
+    <orderEntry type="library" name="Deps: persistent-sorted-set:0.1.2" level="project" />
+    <orderEntry type="library" name="Deps: cheshire:5.10.0" level="project" />
+    <orderEntry type="library" name="Deps: tigris:0.1.2" level="project" />
+    <orderEntry type="library" name="Deps: org.java-websocket/Java-WebSocket:1.5.1" level="project" />
+    <orderEntry type="library" name="Deps: com.wsscode/pathom-viz-connector:2021.05.13" level="project" />
+    <orderEntry type="library" name="Deps: org.clojure/core.match:1.0.0" level="project" />
+    <orderEntry type="library" name="Deps: org.clojure/tools.reader:1.3.5" level="project" />
+    <orderEntry type="library" name="Deps: datascript:1.0.1" level="project" />
+    <orderEntry type="library" name="Deps: org.slf4j/slf4j-api:1.7.28" level="project" />
+    <orderEntry type="library" name="Deps: com.google.re2j/re2j:1.3" level="project" />
+    <orderEntry type="library" name="Deps: org.openjfx/javafx-controls$mac:15.0.1" level="project" />
+    <orderEntry type="library" name="Deps: com.google.javascript/closure-compiler-unshaded:v20200315" level="project" />
+    <orderEntry type="library" name="Deps: org.hsqldb/hsqldb:2.5.1" level="project" />
+    <orderEntry type="library" name="Deps: org.clojure/test.check:1.1.0" level="project" />
+    <orderEntry type="library" name="Deps: com.google.protobuf/protobuf-java:3.11.1" level="project" />
+    <orderEntry type="library" name="Deps: org.clojure/core.memoize:1.0.236" level="project" />
+    <orderEntry type="library" name="Deps: org.clojure/data.priority-map:1.0.0" level="project" />
+    <orderEntry type="library" name="Deps: org.clojure/java.data:1.0.78" level="project" />
+    <orderEntry type="library" name="Deps: org.openjfx/javafx-web:15.0.1" level="project" />
+    <orderEntry type="library" name="Deps: borkdude/sci.impl.reflector:0.0.1" level="project" />
+    <orderEntry type="library" name="Deps: nrepl/bencode:1.1.0" level="project" />
+    <orderEntry type="library" name="Deps: com.google.code.findbugs/jsr305:3.0.2" level="project" />
+    <orderEntry type="library" name="Deps: org.clojure/core.cache:1.0.207" level="project" />
+    <orderEntry type="library" name="Deps: org.openjfx/javafx-graphics$mac:15.0.1" level="project" />
+    <orderEntry type="library" name="Deps: com.vladsch.flexmark/flexmark-util-dependency:0.62.0" level="project" />
+    <orderEntry type="library" name="Deps: org.clojure/core.async:1.3.610" level="project" />
+    <orderEntry type="library" name="Deps: com.fasterxml.jackson.dataformat/jackson-dataformat-smile:2.10.2" level="project" />
+    <orderEntry type="library" name="Deps: org.clojure/data.codec:0.1.0" level="project" />
+    <orderEntry type="library" name="Deps: javax.xml.bind/jaxb-api:2.3.0" level="project" />
+    <orderEntry type="library" name="Deps: com.google.code.gson/gson:2.7" level="project" />
+    <orderEntry type="library" name="Deps: http-kit:2.5.3" level="project" />
+    <orderEntry type="library" name="Deps: com.wsscode/promesa-bridges:2021.01.20" level="project" />
+  </component>
+</module>

@@ -1,0 +1,38 @@
+{:paths
+ ["src/tasks"]
+
+ :tasks
+ {:init
+  (do
+    (require 'tasks)
+    (def source-paths ["src" "test"]))
+
+  format-check
+  {:depends [init]
+   :task    (apply tasks/cljstyle "check" source-paths)}
+
+  format-fix
+  {:depends [init]
+   :task    (apply tasks/cljstyle "fix" source-paths)}
+
+  lint
+  {:depends [init]
+   :task    (tasks/clj-kondo-lint source-paths)}
+
+  lint-deps
+  (when (fs/modified-since ".clj-kondo/.cache" "deps.edn")
+    (shell "bash -c" "clj-kondo --copy-configs --dependencies --lint \"$(clojure -Spath -A:provided:dev)\" --parallel"))
+
+  setup-hooks
+  tasks/setup-git-hooks
+
+  test
+  (shell "clojure" "-A:test:test-deps")
+
+  test-cljs
+  (shell "shadow-cljs" "watch" "test" "-A:test-deps:test-cljs")
+
+  test-cljs-once
+  (do
+    (shell "shadow-cljs" "compile" "ci")
+    (shell "karma" "start" "--single-run"))}}
