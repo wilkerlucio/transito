@@ -15,7 +15,7 @@
   (testing "unknown types"
     (is (str/starts-with?
           (transito/write-str (atom 2))
-          "[\"~#unknown\",\"#object[clojure.lang.Atom"))))
+          "[\"~#unknown\",\"#object"))))
 
 (deftest read-str-test
   (is (= (-> (transito/write-str {})

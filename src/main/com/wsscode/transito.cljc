@@ -1,11 +1,20 @@
 (ns com.wsscode.transito
   (:refer-clojure :exclude [read write])
-  (:require [cognitect.transit :as t]
-            #?(:cljs [goog.object :as gobj]))
-  #?(:clj (:import (java.io ByteArrayOutputStream ByteArrayInputStream OutputStream)
-                   (com.cognitect.transit TransitFactory)
-                   (java.util.function Function)
-                   (cognitect.transit HandlerMapContainer))))
+  (:require
+    [cognitect.transit :as t]
+    #?(:cljs [goog.object :as gobj]))
+  #?(:clj
+     (:import
+       (cognitect.transit
+         HandlerMapContainer)
+       (com.cognitect.transit
+         TransitFactory)
+       (java.io
+         ByteArrayInputStream
+         ByteArrayOutputStream
+         OutputStream)
+       (java.util.function
+         Function))))
 
 (def unknown-default-handler
   (t/write-handler (fn [_] "unknown") #(pr-str %)))
@@ -44,10 +53,10 @@
                             (merge t/default-write-handlers handlers))]
           (t/->Writer
             (TransitFactory/writer (#'t/transit-format type) out handler-map default-handler
-              (when transform
-                (reify Function
-                  (apply [_ x]
-                    (transform x)))))))
+                                   (when transform
+                                     (reify Function
+                                       (apply [_ x]
+                                         (transform x)))))))
         (throw (ex-info "Type must be :json, :json-verbose or :msgpack" {:type type}))))))
 
 (defn ^String write-str
@@ -58,18 +67,18 @@
    #?(:clj
       (let [out    (ByteArrayOutputStream.)
             writer (writer out :json
-                     (cond-> {:default-handler unknown-default-handler
-                              :handlers        handlers}
-                       write-meta?
-                       (assoc :transform t/write-meta)))]
+                           (cond-> {:default-handler unknown-default-handler
+                                    :handlers        handlers}
+                             write-meta?
+                             (assoc :transform t/write-meta)))]
         (t/write writer x)
         (.toString out))
 
       :cljs
       (let [writer (t/writer :json
-                     (cond-> {:handlers (merge cljs-write-handlers handlers)}
-                       write-meta?
-                       (assoc :transform t/write-meta)))]
+                             (cond-> {:handlers (merge cljs-write-handlers handlers)}
+                               write-meta?
+                               (assoc :transform t/write-meta)))]
         (t/write writer x)))))
 
 #?(:cljs
