@@ -8,16 +8,13 @@
     (def source-paths ["src" "test"]))
 
   format-check
-  {:depends [init]
-   :task    (apply tasks/cljstyle "check" source-paths)}
+  {:task (apply tasks/cljstyle "check" source-paths)}
 
   format-fix
-  {:depends [init]
-   :task    (apply tasks/cljstyle "fix" source-paths)}
+  {:task (apply tasks/cljstyle "fix" source-paths)}
 
   lint
-  {:depends [init]
-   :task    (tasks/clj-kondo-lint source-paths)}
+  {:task (tasks/clj-kondo-lint source-paths)}
 
   lint-deps
   (when (fs/modified-since ".clj-kondo/.cache" "deps.edn")

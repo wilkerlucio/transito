@@ -1,8 +1,8 @@
 (ns com.wsscode.transito-test
   (:require
+    [clojure.string :as str]
     [clojure.test :refer [deftest is testing]]
-    [com.wsscode.transito :as transito]
-    [clojure.string :as str]))
+    [com.wsscode.transito :as transito]))
 
 (deftest write-str-test
   (is (= (transito/write-str {})
