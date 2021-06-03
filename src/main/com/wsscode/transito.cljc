@@ -3,7 +3,7 @@
   (:require [cognitect.transit :as t]
             #?(:cljs [goog.object :as gobj]))
   #?(:clj (:import (java.io ByteArrayOutputStream ByteArrayInputStream OutputStream)
-                   (com.cognitect.transit WriteHandler TransitFactory)
+                   (com.cognitect.transit TransitFactory)
                    (java.util.function Function)
                    (cognitect.transit HandlerMapContainer))))
 
