@@ -62,12 +62,13 @@
 (defn ^String write-str
   ([x] (write-str x {}))
   ([x
-    {:keys [handlers write-meta?]
+    {:keys [handlers default-handler write-meta?]
      :or   {write-meta? true}}]
    #?(:clj
       (let [out    (ByteArrayOutputStream.)
             writer (writer out :json
-                           (cond-> {:default-handler unknown-default-handler
+                           (cond-> {:default-handler (or default-handler
+                                                         unknown-default-handler)
                                     :handlers        handlers}
                              write-meta?
                              (assoc :transform t/write-meta)))]
@@ -76,7 +77,9 @@
 
       :cljs
       (let [writer (t/writer :json
-                             (cond-> {:handlers (merge cljs-write-handlers handlers)}
+                             (cond-> {:handlers (merge cljs-write-handlers handlers
+                                                       (if default-handler
+                                                         {"default" default-handler}))}
                                write-meta?
                                (assoc :transform t/write-meta)))]
         (t/write writer x)))))
