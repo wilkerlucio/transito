@@ -28,5 +28,14 @@ com.wsscode/transito {:mvn/version "2021.07.04"}
 ; read from string
 (def data (transito/read-str demo-str))
 
-; both read and write support options, same ones you use 
+; options for write-str
+(def demo-str (transito/write-str {:data "structure"}
+                {:handlers {...}
+                 :default-handler (some-handler) ; use this to override the default handler for unknown types 
+                 :write-meta? false ; convenience flag to enable or disable write-meta, enabled by default
+                 }))
+
+; options for read-str
+(def data (transito/read-str demo-str
+            {:handlers {...}}))
 ```
