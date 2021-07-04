@@ -32,4 +32,11 @@
   test-cljs-once
   (do
     (shell "shadow-cljs" "compile" "ci")
-    (shell "karma" "start" "--single-run"))}}
+    (shell "karma" "start" "--single-run"))
+
+  release
+  {:doc  "Release to Clojars"
+   :task (do
+           (shell "lein vcs tag v")
+           (shell "git push --follow-tags")
+           (shell "lein deploy clojars"))}}}
