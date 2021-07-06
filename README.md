@@ -1,10 +1,10 @@
 # Transito
 
-Transito is a library with helpers to easy the usage of Transit in Clojure and Clojurescript.
+Transito is a library with helpers to ease the usage of Transit in Clojure and Clojurescript.
 
 Why use Transito?
 
-Transito provides an easy way to an opinionated way to use Transit:
+Transito provides an easy way to an opinionated usage of Transit:
 
 1. Simple `write-str` and `read-str` functions allows CLJC usage of Transit without dealing with `ByteArray` classes or similar things.
 2. Support out-of-the-box write unknown types tolerance.
